@@ -1,0 +1,53 @@
+<!--pages/upPage/upPage.wxml-->
+<view class='up-top'>
+  <text class='up-top-left'>本次支出</text>
+  <text class='up-top-right'>￥0.00元</text>
+</view>
+
+
+<view class='up-first'>
+  <view>
+    <image src='15_日历.png'></image>
+  </view>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="up-data">
+      {{date}}
+    </view>
+  </picker>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="up-time">
+      {{time}}
+    </view>
+  </picker>
+</view>
+<view class='up-first'>
+  <view>
+    <image src='15_日历.png'></image>
+  </view>
+  <view>这是传过来的标题</view>
+</view>
+<view class='up-first'>
+  <view>
+    <image src='15_日历.png'></image>
+  </view>
+  <input placeholder='单机此处添加备注'></input>
+</view>
+
+<view class='img-box'>
+  <view bindtap='chooseimage' class='up-image-box'>
+    <image src='{{tempFilePaths}}' mode="aspecFill" />
+  </view>
+  <view bindtap='chooseimage1' class='up-image-box'>
+    <image src='{{tempFilePaths1}}' mode="aspecFill" />
+  </view>
+  <view bindtap='chooseimage2' class='up-image-box'>
+    <image src='{{tempFilePaths2}}' mode="aspecFill" />
+  </view>
+</view>
+
+
+
+<view class='up-buttom'>
+  <button>保存</button>
+  <button>删除</button>
+</view>

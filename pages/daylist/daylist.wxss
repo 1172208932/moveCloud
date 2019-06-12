@@ -1,0 +1,75 @@
+/* pages/daylist/daylist.wxss */
+@import "../index/index.wxss";
+
+.arrow_down {
+  position: absolute;
+  top: 68rpx;
+  left: 476rpx;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #4c4c4c;
+}
+.datData {
+  background-color: white;
+  height: 100rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.weui-input {
+  text-align: center;
+  padding-top: 45rpx;
+}
+
+.topTabbar {
+  background-color: #f1f1f1;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.topTabbar view {
+  color: #ff3044;
+  padding-top: 25rpx;
+  /* align-self:center; */
+  flex: 1;
+  text-align: center;
+}
+
+.dat-list {
+  width: 100%;
+}
+
+.swiper-tab-item {
+  margin-left: 85rpx;
+  margin-right: 85rpx;
+}
+
+.active {
+  color: red;
+  border-bottom: 4rpx solid red;
+}
+
+.list_1 {
+  display: flex;
+  flex-direction: row;
+  height: 90rpx;
+  background-color: white;
+  margin-bottom: 5rpx;
+  font-size: 35rpx;
+}
+
+.list_1 view {
+  padding-left: 50rpx;
+  color: #4c4c4c;
+  line-height: 90rpx;
+}
+
+.list_view {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 270rpx;
+}

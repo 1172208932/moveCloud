@@ -1,0 +1,50 @@
+<!--pages/firstout/firstout.wxml-->
+<view class='firstTop'>
+  <view class='crow'>
+    <view>6月支出</view>
+    <view>0</view>
+  </view>
+  <view class='clom'></view>
+  <view class='crow'>
+    <view>6月收入</view>
+    <view>0</view>
+  </view>
+</view>
+
+<view class='secondBox'>
+  <view class='littleRed'></view>
+  <view>支出明细</view>
+</view>
+
+<view class='listbox'>
+<view class='firstTime'>今天</view>
+<view class='listAll'>
+<view class='listAllLeft'>
+<view>1234.00元</view>
+<view>消费总金额</view>
+</view>
+<view class='listAllConter'>
+<view><text>5</text>笔</view>
+<view>支出</view>
+</view>
+<view bindtap='toDay' class='listAllRight'>查看详情</view>
+</view>
+</view>
+
+
+<view class='tabbar'>
+  <view class="tabbarBox">
+    <image src='../index/形状 1.png'></image>
+    <view>首页</view>
+  </view>
+  <view class="tabbarBox-2" bindtouchstart="voicebegin" bindtouchend="voiceend">
+    <image class='Voice {{showView?"hide":"show"}}' src='../index/形状 2.png'></image>
+    <image class='Voice {{showView?"show":"hide"}}' src='../index/形状 2 拷贝.png'></image>
+    <view class='{{showView?"hide":"show"}}'>长按录音</view>
+    <view class='{{showView?"show":"hide"}}'>松开结束</view>
+  </view>
+  <view bindtap='totextpage' class="tabbarBox">
+    <image src='../index/形状 4.png'></image>
+    <view>手写</view>
+  </view>
+</view>

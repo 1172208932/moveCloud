@@ -1,0 +1,136 @@
+/* pages/firstout/firstout.wxss */
+@import "../index/index.wxss";
+page {
+  background: #f6f6f6;
+  height: 100%;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  */
+  position: relative;
+}
+
+.tabbar {
+  width: 100%;
+  height: 100rpx;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+}
+
+/*firsttop begin  */
+.clom{
+  position: absolute;
+  left: 50%;
+  top: 56rpx;
+  width: 2rpx;
+  background-color: white;
+  height: 130rpx;
+}
+.firstTop {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 238rpx;
+  background-color: #ff4033;
+}
+
+.crow {
+  padding-top: 111rpx;
+  flex: 1;
+}
+
+.crow view {
+  text-align: center;
+  color: white;
+}
+
+/*firsttop end   */
+
+.secondBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120rpx;
+  background-color: white;
+  margin-bottom: 5rpx;
+}
+
+.secondBox view {
+  align-self: center;
+  color: #7c7c7c;
+}
+
+.littleRed {
+  margin: 0 30rpx;
+  width: 10rpx;
+  align-self: center;
+  background-color: #ff4033;
+  height: 44rpx;
+  border-radius: 10rpx;
+}
+
+/*listbox start */
+
+.listbox {
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstTime {
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+  flex: 1;
+}
+
+.listAll {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.listAllLeft {
+  text-align: center;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+}
+.listAllLeft view:first-child{
+  color: #ff4033;
+}
+.listAllLeft view:last-child{
+  color: #7c7c7c;
+  font-size: 30rpx;
+}
+.listAllConter view:first-child{
+  color: #7c7c7c;
+  font-size: 30rpx;
+}
+.listAllConter view:last-child{
+  color: #7c7c7c;
+  font-size: 30rpx;
+}
+.listAllConter view text{
+  color: #ff4033;
+}
+.listAllConter {
+  text-align: center;
+  flex: 1;
+}
+
+.listAllRight {
+  background-color: rgb(255, 121, 122);
+  color: white;
+  text-align: center;
+  height: 50rpx;
+  border-radius: 10rpx;
+  margin-right:20rpx;
+  padding: 5rpx 20rpx;
+  font-size: 30rpx;
+}
+
+/*listbox end  */
+
+

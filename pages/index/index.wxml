@@ -1,0 +1,80 @@
+<!--index.wxml-->
+
+<view class='top'>
+  <view class='topBox'>
+    <view class='topLittleBOX-1'>本月收入</view>
+    <view class='topLittleBOX-2'>
+      <view class='row-1' style='width:{{row1}}rpx'></view>
+      <view class='rowText'>{{inmoney}}</view>
+    </view>
+  </view>
+  <view class='topBox'>
+    <view class='topLittleBOX-1'>本月支出</view>
+    <view class='topLittleBOX-2'>
+      <view class='row-2' style='width:{{row2}}rpx'></view>
+      <view class='rowText'>{{cost}}</view>
+    </view>
+  </view>
+  <view class='topBox'>
+    <view class='topLittleBOX-1'>本月结余</view>
+    <view class='topLittleBOX-2'>
+      <view class='row-3' style='width:{{row3}}rpx'></view>
+      <view class='rowText'>{{little}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='body'>
+  <view bindtap='toFirst' class='iconBox'>
+    <image src='./收入 (1).png'></image>
+    <view>支出</view>
+  </view>
+  <view class='iconBox'>
+    <image src='./支出管理.png'></image>
+    <view>收入</view>
+  </view>
+  <view class='iconBox'>
+    <image src='./账单.png'></image>
+    <view>账单</view>
+  </view>
+</view>
+<view class='span'>
+  <view class='spanIcon'>支出</view>
+  <view class='textBox'>今天购买哈士奇...</view>
+  <view class='timeSpan'>2018-6-24</view>
+  <view class='right'>5000.00</view>
+</view>
+<view class='span'>
+  <view class='incomIcon'>收入</view>
+  <view class='textBox'>今天购买哈士奇...</view>
+  <view class='timeSpan'>2018-6-24</view>
+  <view class='right'>5000.00</view>
+</view>
+<!-- <button bindtap='insert'>插入数据</button>
+<button bindtap='upData'>插入数据</button> -->
+<!-- <button bindtap='sum'>求和</button> -->
+<!-- <button bindtap='getid'>获取当前用户openid</button> -->
+<button bindtap='delet'>批量删除</button>
+<view>云存储</view>
+<button bindtap='savefile'>云存储</button>
+<button bindtap='showimg'>展示图片</button>
+<block wx:for="{{images}}">
+<image src="{{item.fileID}}"></image>
+<button data-fileid="{{item.fileID}}" bindtap='down'>下载</button>
+</block>
+<!-- <view class='tabbar'> -->
+  <!-- <view class="tabbarBox">
+    <image src='形状 1.png'></image>
+    <view>首页</view>
+  </view> -->
+  <!-- <view class="tabbarBox-2" bindtouchstart="voicebegin" bindtouchend="voiceend">
+    <image class='Voice {{showView?"hide":"show"}}' src='形状 2.png'></image>
+    <image class='Voice {{showView?"show":"hide"}}' src='形状 2 拷贝.png'></image>
+    <view class='{{showView?"hide":"show"}}'>长按录音</view>
+    <view class='{{showView?"show":"hide"}}'>松开结束</view>
+  </view> -->
+  <!-- <view bindtap='totextpage' class="tabbarBox">
+    <image src='形状 4.png'></image>
+    <view>手写</view>
+  </view> -->
+<!-- </view> -->

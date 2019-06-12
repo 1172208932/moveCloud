@@ -1,0 +1,38 @@
+/* pages/textPage/textPage.wxss */
+page {
+  background: #f1f1f1;
+  height: 100%;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  */
+  position: relative;
+}
+.textarea{
+  width: 90%;
+ margin-left: 5%;
+  background-color: white;
+  border-radius: 10rpx;
+  margin-top:50rpx;
+}
+
+.up-buttom button{
+  margin-bottom:20rpx; 
+  width: 90%;
+}
+.up-buttom button:first-child{
+    margin-top: 500rpx;
+  background-color: #f1f1f1;
+    border: 2rpx solid #ff4033;
+  color: #ff4033;
+}
+.up-buttom button:last-child{
+  background-color: #f1f1f1;
+  border: 2rpx solid #ff4033;
+  color: #ff4033;
+}
+
+.textarea textarea{
+  padding-top: 20rpx;
+  padding-left: 10rpx;
+  font-size: 25rpx;
+}

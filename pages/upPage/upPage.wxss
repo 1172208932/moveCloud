@@ -1,0 +1,89 @@
+/* pages/upPage/upPage.wxss */
+
+.up-top {
+  position: relative;
+  width: 100%;
+  height: 150rpx;
+}
+
+.up-top-left {
+  line-height: 150rpx;
+  position: absolute;
+  left: 20rpx;
+}
+.up-top-right {
+  line-height: 150rpx;
+  position: absolute;
+  right: 20rpx;
+  color: #ff4033;
+}
+.up-first {
+  height: 70rpx;
+  margin: 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #7c7c7c;
+}
+.up-first picker {
+  margin-top: 16rpx;
+  margin-left: 15rpx;
+}
+.up-first input{
+  margin-top: 9rpx;
+  margin-left: 15rpx;  
+}
+
+.up-first view {
+  margin-left: 15rpx;  
+  font-size: 30rpx;
+  align-self: center;
+}
+
+.up-first image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.up-time {
+  margin-left: 20rpx;
+}
+
+/*上传图片  */
+
+.img-box {
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.up-image-box {
+  margin-left: 20rpx;
+  border: 2rpx solid #7c7c7c;
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.up-image-box image {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+/*按钮  */
+
+.up-buttom button {
+  margin-bottom: 20rpx;
+  width: 90%;
+}
+
+.up-buttom button:first-child {
+  margin-top: 300rpx;
+  background-color: #ff4033;
+  color: white;
+}
+
+.up-buttom button:last-child {
+  background-color: white;
+  border: 2rpx solid #ff4033;
+  color: #ff4033;
+}

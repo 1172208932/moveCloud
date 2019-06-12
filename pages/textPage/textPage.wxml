@@ -1,0 +1,9 @@
+<!--pages/textPage/textPage.wxml-->
+<view class='textarea'>
+  <textarea placeholder='点击输入文本'></textarea>
+</view>
+
+<view class='up-buttom'>
+  <button>保存至支出</button>
+  <button>保存至收入</button>
+</view>
